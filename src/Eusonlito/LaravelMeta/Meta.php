@@ -267,7 +267,7 @@ class Meta
             return $text;
         }
 
-        $length = strlen($text);
+        $length = mb_strlen($text);
 
         if ($length <= (int) $limit) {
             return $text;
